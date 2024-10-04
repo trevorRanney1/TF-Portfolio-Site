@@ -1,0 +1,373 @@
+:root {
+    --total-h-size: 42px;
+}
+
+body {
+    color: var(--total-body-color, #444);
+    font-size: var(--total-body-size, 17px);
+    letter-spacing: var(--total-body-letter-spacing, 0);
+    line-height: var(--total-body-line-height, 1.6);
+    font-family: var(--total-body-family, Poppins);
+    font-weight: var(--total-body-weight, 400);
+    font-style: var(--total-body-style, normal);
+    text-decoration: var(--total-body-text-decoration, none);
+    text-transform: var(--total-body-text-transform, none);
+}
+
+
+/**
+ * 2.0 Typography
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--total-h-family, Oswald);
+    letter-spacing: var(--total-h-letter-spacing, 0);
+    line-height: var(--total-h-line-height, 1.3);
+    font-weight: var(--total-h-weight, 400);
+    font-style: var(--total-h-style, normal);
+    text-decoration: var(--total-h-text-decoration, none);
+    text-transform: var(--total-h-text-transform, none);
+}
+
+h1 {
+    font-size: var(--total-h-size);
+    margin: 0 0 15px 0;
+}
+
+h2 {
+    font-size: calc(var(--total-h-size) * 7/8);
+    margin: 0 0 15px 0;
+}
+
+h3 {
+    font-size: calc(var(--total-h-size) * 6/8);
+    margin: 0 0 15px 0;
+}
+
+h4 {
+    font-size: calc(var(--total-h-size) * 5/8);
+    margin: 0 0 10px 0;
+}
+
+h5 {
+    font-size: calc(var(--total-h-size) * 4/8);
+    margin: 0 0 10px 0;
+}
+
+h6 {
+    font-size: calc(var(--total-h-size) * 3/8);
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 0 0 25px;
+}
+
+a {
+    color: var(--total-content-link-color, #000);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--total-content-link-hov-color, var(--total-content-link-color));
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+blockquote {
+    border-left: 4px solid #707070;
+    color: #707070;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.8182;
+    margin: 0 0 35px 0;
+    padding-left: 17px;
+}
+
+blockquote > blockquote {
+    margin-left: 0;
+}
+
+blockquote p {
+    margin-bottom: 35px;
+}
+
+blockquote > p:last-child {
+    margin-bottom: 0;
+}
+
+blockquote cite,
+blockquote small {
+    color: #333;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 17px;
+    line-height: 1.6471;
+}
+
+blockquote em,
+blockquote i,
+blockquote cite {
+    font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+    font-weight: 400;
+}
+
+address {
+    font-style: italic;
+    margin: 0 0 28px;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+    font-family: Inconsolata, monospace;
+}
+
+pre {
+    background-color: #fcfcfc;
+    border: 1px solid #eaeaea;
+    font-size: 17px;
+    line-height: 1.2353;
+    margin-bottom: 28px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 14px;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted #eaeaea;
+    cursor: help;
+}
+
+mark,
+ins {
+    background-color: #fff9c0;
+    text-decoration: none;
+}
+
+sup,
+sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+small {
+    font-size: 75%;
+}
+
+big {
+    font-size: 125%;
+}
+
+
+/**
+ * 3.0 Elements
+ */
+
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 15px;
+}
+
+ul,
+ol {
+    margin: 0 0 15px 20px;
+    padding: 0;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li > ul,
+li > ol {
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 15px 15px;
+}
+
+img {
+    height: auto;
+    /* Make sure images are scaled correctly. */
+    max-width: 100%;
+    /* Adhere to container width. */
+    vertical-align: middle;
+}
+
+table {
+    margin: 0 0 15px;
+    width: 100%;
+}
+
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+figure {
+    margin: 0;
+}
+
+del {
+    opacity: 0.8;
+}
+
+
+/**
+ * 4.0 Alignment
+ */
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/**
+ * 5.0 Caption
+ */
+.wp-caption {
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 0 auto;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+
+
+/**
+ * 6.0 Galleries
+ */
+
+.gallery {
+    margin-bottom: 15px;
+}
+
+.gallery-item {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+
+.gallery-caption {
+    display: block;
+}
+
+
+/**
+ * 7.0 Audio / Video
+ */
+
+.mce-content-body .wpview-wrap {
+    margin-bottom: 32px;
+}
+
+.mce-content-body .wp-audio-playlist {
+    margin: 0;
+}
